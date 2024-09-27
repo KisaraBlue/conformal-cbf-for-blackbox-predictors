@@ -136,77 +136,73 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/Algo_diagram.png" alt="Algorithm diagram" width="600" height="600" margin="auto" class="center"/>
-        <h2 class="subtitle has-text-centered">
-          Upgrading a continuous QP controller with the dicrete update of the conformal variable.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Trajectory comparison.
-        </h2>
+        <center>
+          <img src="static/images/Algo_diagram.png" alt="Algorithm diagram" width="600" height="600" margin="auto" class="center"/>
+          <h2 class="subtitle has-text-centered">
+            Upgrading a continuous QP controller with the dicrete update of the conformal variable.
+          </h2>
+        </center>center>
       </div>
 </div>
 </div>
 </section>
-<!-- End image carousel -->
 
 
-<!-- Video carousel -->
+
 <section class="hero is-small">
   <div class="hero-body">
+    <h2 class="title is-3">Stanford Drone Dataset Experiments</h2>
     <div class="container">
-      <h2 class="title is-3">Stanford Drone Dataset Experiments</h2>
-      <div id="results-carousel" class="carousel results-carousel" data-interval="14000">
+      <h3 class="title is-3">gates_1 scenario</h3>
         <div class="item item-video1">
-          <video id="video1" autoplay controls muted loop width="675" height="950">
+          <video id="video1" autoplay controls muted loop width="49%" height="auto">
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4"
             type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            SDD's gates_1 scenario with no learning.
-          </h2>
+          <h4 class="subtitle has-text-centered">
+            No learning
+          </h4>
         </div>
         <div class="item item-video2">
-          <video id="video2" autoplay controls muted loop width="675" height="950">
+          <video id="video2" autoplay controls muted loop width="49%" height="auto">
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4"
             type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            SDD's gates_1 scenario with conformal updtates towards a 0.2 loss.
-          </h2>
+          <h4 class="subtitle has-text-centered">
+            Learning the conformal variable towards a loss of 0.2
+          </h4>
         </div>
+      </div>
+      <div class="container">
+        <h3 class="title is-3">nexus_4 scenario</h3>
         <div class="item item-video3">
-          <video id="video3" autoplay controls muted loop width="675" height="950">
+          <video id="video3" autoplay controls muted loop width="49%" height="auto">
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_gt_no_learning.mp4"
             type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            SDD's nexus_4 scenario with no learning.
-          </h2>
+          <h4 class="subtitle has-text-centered">
+            No learning
+          </h4>
         </div>
         <div class="item item-video4">
-          <video id="video4" autoplay controls muted loop width="675" height="950">
+          <video id="video4" autoplay controls muted loop width="49%" height="auto">
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_pred24_all_pred_lr1_0_e-0_1.mp4"
             type="video/mp4">
           </video>
-          <h2 class="subtitle has-text-centered">
-            SDD's nexus_4 scenario with conformal updtates towards a -0.1 loss.
-          </h2>
+          <h4 class="subtitle has-text-centered">
+            Learning the conformal variable towards a loss of -0.1
+          </h4>
         </div>
-      </div>
     </div>
   </div>
 </section>
