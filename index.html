@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Safe Decentralized Multi-Agent Control using Black-Box Predictors, Conformal Decision Policies, and Control Barrier Functions</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,17 +56,13 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=slHV9fEAAAAJ" target="_blank">Sacha Huriot</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="https://engineering.washu.edu/faculty/Hussein-Sibai.html" target="_blank">Hussein Sibai</a></span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Washington University in St. Louis<br>Submitted for ICRA 2025</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -82,20 +78,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/KisaraBlue/Conformal-CBF-for-multi-agent" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -148,8 +133,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            We address the challenge of safe control in decentralized multi-agent robotic settings, where agents use uncertain black-box models to predict other agents’ trajectories. We use the recently proposed conformal decision theory to adapt the restrictiveness of control barrier functions-based safety constraints based on observed prediction errors. We use these constraints to synthesize controllers that balance between the objectives of safety and task accomplishment, despite the prediction errors. We provide an upper bound on the average over time of the value of a monotonic function of the difference between the safety constraint based on the predicted trajectories and the constraint based on the ground truth ones. We validate our theory through experimental results showing the performance of our controllers when navigating a robot in the multi-agent scenes in the Stanford Drone Dataset</p>
         </div>
       </div>
     </div>
@@ -167,7 +151,7 @@
         <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Upgrading a continuous QP controller with the dicrete update of the conformal variable.
         </h2>
       </div>
       <div class="item">
@@ -177,48 +161,11 @@
           Second image description.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
 
 <!-- Video carousel -->
@@ -233,6 +180,9 @@
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            SDD's gates_1 scenario with no learning.
+          </h2>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
@@ -240,38 +190,35 @@
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            SDD's gates_1 scenario with conformal updtates towards a 0.2 loss.
+          </h2>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
+          <h2 class="subtitle has-text-centered">
+            SDD's nexus_4 scenario with no learning.
+          </h2>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            SDD's nexus_4 scenario with conformal updtates towards a -0.1 loss.
+          </h2>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
