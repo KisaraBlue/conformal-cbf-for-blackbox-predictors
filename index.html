@@ -166,47 +166,35 @@
     </div>
     <h3 class="title is-3">gates_1 scenario</h3>
 
-    <div id="wrapper"> 
-  <div id="home1">
-   <video width="400" height="300" controls="controls" muted loop>
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4"
-            type="video/mp4">
-          </video>
-  </div>
-  <div id="home2">
-   <video width="400" height="300" controls="controls" muted loop>
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4"
-            type="video/mp4">
-          </video>
-  </div> 
-</div>
+    <table>
+  <tr>
+    <td>
+      <video src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4" autoplay controls="controls"/>
+    </td>
+    <td>
+      <video src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4" autoplay controls="controls"/>
+     </td>
+  </tr>
+</table>
+        <h4 class="subtitle" centered>
+            No learning vs. Learning &lambda; with a target loss of 0.2
+          </h4>
+    <div id="wrapper">
 
     <h3 class="title is-3">nexus_4 scenario</h3>
-    <div id="wrapper">
-      <div id="left" class="item item-video3">
-          <video id="video3" autoplay controls muted loop width="45%" height="auto">
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_gt_no_learning.mp4"
-            type="video/mp4">
-          </video>
-          <h4 class="subtitle">
-            No learning
+    <table>
+  <tr>
+    <td>
+      <video src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_gt_no_learning.mp4" autoplay controls="controls"/>
+    </td>
+    <td>
+      <video src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_pred24_all_pred_lr1_0_e-0_1.mp4" autoplay controls="controls"/>
+     </td>
+  </tr>
+</table>
+    <h4 class="subtitle" centered>
+            No learning vs. Learning &lambda; with a target loss of -0.1
           </h4>
-        </div>
-      <div id="right" class="item item-video4">
-          <video id="video4" autoplay controls muted loop width="45%" height="auto">
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a1_0_DI_2_0_25_0_1_0_400_0_pred24_all_pred_lr1_0_e-0_1.mp4"
-            type="video/mp4">
-          </video>
-          <h4 class="subtitle">
-            Learning &lambda; with a target loss of -0.1
-          </h4>
-        </div>
-      <div class="clear"></div> 
-    </div>
   </div>
 </section>
 
