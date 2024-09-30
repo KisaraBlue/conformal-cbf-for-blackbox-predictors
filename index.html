@@ -165,21 +165,23 @@
       <p>There are several parameters we experimented with to evaluate the performance of our conformal controller. They can be divided into two groups: the controller’s inherent parameters (the sensor’s sampling time and the CBF's parameters), and the learning parameters (the learning rate and the target loss). In order to assess the controller’s performance, we used several key metrics: the time for reaching the goal, the number of frames at which the agent was at collision, the minimal distance between the ego agent and the pedestrians, and finally the average loss of our conformal controller. Our approach does not guarantee collision avoidance, but a bound on the average loss that is a surrogate for the average number of CBF constraints violations.</p>
     </div>
     <h3 class="title is-3">gates_1 scenario</h3>
-    <div class="container">
-        <video id="video1" autoplay controls muted loop>
+
+    <div id="wrapper"> 
+  <div id="home1">
+   <video width="400" height="300" controls="controls" muted loop>
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4"
             type="video/mp4">
           </video>
-      <video id="video2" autoplay controls muted loop>
+  </div>
+  <div id="home2">
+   <video width="400" height="300" controls="controls" muted loop>
             <!-- Your video file here -->
             <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4"
             type="video/mp4">
           </video>
-      <h4 class="subtitle" text-align="center">
-            No Learning vs. Learning &lambda; with a target loss of 0.2
-          </h4>
-    </div>
+  </div> 
+</div>
 
     <h3 class="title is-3">nexus_4 scenario</h3>
     <div id="wrapper">
