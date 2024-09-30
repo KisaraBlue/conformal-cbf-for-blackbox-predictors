@@ -108,11 +108,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/vid_compare_s4_a10_0_DI_1_0_20_0_1_0_400_0_pred4_all_pred_lr10_0_e0_0and_gt_no_learning.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Our conformal controller learning to adapt to prediction errors (in blue) vs. a baseline controller having access to real positions (in red). 
+        Our conformal controller learning to adapt to prediction errors (in blue) vs. a baseline controller having access to real positions (in green). 
       </h2>
     </div>
   </div>
@@ -166,12 +166,16 @@
     </div>
     <h3 class="title is-3">gates_1 scenario</h3>
     <div class="container">
-        <div class="video">
-            <iframe src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video">
-            <iframe src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <video id="video1" autoplay controls muted loop>
+            <!-- Your video file here -->
+            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4"
+            type="video/mp4">
+          </video>
+      <video id="video2" autoplay controls muted loop>
+            <!-- Your video file here -->
+            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4"
+            type="video/mp4">
+          </video>
       <h4 class="subtitle" text-align="center">
             No Learning vs. Learning &lambda; with a target loss of 0.2
           </h4>
