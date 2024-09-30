@@ -162,28 +162,21 @@
       <p>We implemented the conformal update in Python on top of the code used in <a href=https://conformal-decision.github.io/ target="_blank">Conformal Decision Theory</a>. SDD is a large dataset of annotated 30 fps birds-eye-view videos of various types of agents that navigate in different high traffic areas of the campus of Stanford University. We used the trajectory predictor darts which, for every scenario, frame, and pedestrian agent on that frame, predicts the positions of the agents for the next 40 frames. A virtual robot is simulated in the scene, equipped with the darts predictor, and has to reach a specific goal position while avoiding the real positions of surrounding dynamic agents. In our experiments, we use a CBF-based controller instead of a model predictive one to achieve safety. We assume that our robot has double integrator dynamics and use the artificial potential fields-based CBF from for collision avoidance.</p>
     </div>
     <div class="content has-text-justified">
-      <p>There are several parameters we experimented with to evaluate the performance of our conformal controller. They can be divided into two groups: the controller’s inherent parameters (the sensor’s sampling time, the slope of the linear class-&kappa; function for the CBF, as well as the potential fields parameters), and the learning parameters (the learning rate, and the target loss &epsilon;). In order to assess the controller’s performance, we used several key metrics: the time for reaching the goal, the number of frames at which the agent was at collision, the minimal distance between the ego agent and the pedestrians, and finally the average loss of our conformal controller. Our approach does not guarantee collision avoidance, but a bound on the average loss that is a surrogate for the average number of CBF constraints violations.</p>
+      <p>There are several parameters we experimented with to evaluate the performance of our conformal controller. They can be divided into two groups: the controller’s inherent parameters (the sensor’s sampling time and the CBF's parameters), and the learning parameters (the learning rate and the target loss). In order to assess the controller’s performance, we used several key metrics: the time for reaching the goal, the number of frames at which the agent was at collision, the minimal distance between the ego agent and the pedestrians, and finally the average loss of our conformal controller. Our approach does not guarantee collision avoidance, but a bound on the average loss that is a surrogate for the average number of CBF constraints violations.</p>
     </div>
     <h3 class="title is-3">gates_1 scenario</h3>
-    <div id="wrapper">
-          <video id="video1" autoplay controls muted loop width="45%" height="auto">
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4"
-            type="video/mp4">
-          </video>
-          <h4 class="subtitle">
-            No learning
+    <div class="container">
+        <div class="video">
+            <iframe src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_gt_no_learning.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video">
+            <iframe src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      <h4 class="subtitle" text-align="center">
+            No Learning vs. Learning &lambda; with a target loss of 0.2
           </h4>
-          <video id="video2" autoplay controls muted loop width="45%" height="auto">
-            <!-- Your video file here -->
-            <source src="static/videos/vid_s4_a0_1_DI_2_0_20_0_1_0_400_0_pred12_all_pred_lr100_0_e0_2.mp4"
-            type="video/mp4">
-          </video>
-          <h4 class="subtitle">
-            Learning &lambda; towards a loss of 0.2
-          </h4>
-      <div class="clear"></div> 
     </div>
+
     <h3 class="title is-3">nexus_4 scenario</h3>
     <div id="wrapper">
       <div id="left" class="item item-video3">
@@ -203,7 +196,7 @@
             type="video/mp4">
           </video>
           <h4 class="subtitle">
-            Learning &lambda; towards a loss of -0.1
+            Learning &lambda; with a target loss of -0.1
           </h4>
         </div>
       <div class="clear"></div> 
